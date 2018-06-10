@@ -1,4 +1,4 @@
-FROM node:7.3.0
+FROM node:8.11.2
 
 COPY . /home/service-node
 
@@ -6,4 +6,4 @@ WORKDIR /home/service-node
 
 EXPOSE 8001
 
-CMD ["npm", "run", "start"]
+CMD ["node", "run", "start"]
